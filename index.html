@@ -9,29 +9,24 @@
 			}
 
 			body {
-				background-image: url(img/3.png);
-				background-size:cover;
+				background-image: url(img/background.png);
+				background-size: cover;
 				background-repeat: no-repeat;
 				background-attachment: fixed;
 				background-position: center;
 			}
 
 			h1 {
-				text-align: center;
+				
 
 				color: white;
 				font-family: "微软雅黑"
 			}
 
-			h2 {
-				text-align: center;
-				color: white;
-				font-family: 微软雅黑;
-			}
 
 			p {
-			
-				font-variant: small-caps;
+
+				font-family: "微软雅黑";
 				color: white;
 			}
 
@@ -45,64 +40,83 @@
 
 			div.big {
 				width: 880px;
-				height: 1000px;
+
 				position: relative;
 				margin: auto;
+				text-align: center;
 			}
 
 			div.head {
-				padding: 30px;
+				
 				background-color: black;
-				width: 880px;
-				height: 200px;
+				padding: 20px;
 				text-align: center;
-				filter: alpha(Opacity=60);
-				-moz-opacity: 0.6;
-				opacity: 0.6;
+				background: rgba(0, 0, 0, 0.5);
 
-				margin-top: 80px;
-				position: relative;
-				float: inherit;
+
 
 			}
 
 			div.two {
 				background-color: black;
-				padding: 20px;
+				
 				margin-top: 20px;
 				text-align: center;
-				position: relative;
-				filter: alpha(Opacity=60);
-				-moz-opacity: 0.6;
-				opacity: 0.6;
-				float: inherit;
+				
+				background: rgba(0, 0, 0, 0.5);
+
 
 			}
 
 			div.three {
-				background-color: black;
-				padding: 20px;
+
+				
 				margin-top: 20px;
 				text-align: center;
-				position: relative;
-				filter: alpha(Opacity=60);
-				-moz-opacity: 0.6;
-				opacity: 0.6;
-				float: inherit;
+				
 
+
+			}
+
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				width: 880px;
+				background-color: black;
+				background: rgba(0, 0, 0, 0.5);
+			}
+
+			li a {
+				display: block;
+				color: white;
+				padding: 8px 16px;
+				text-decoration: none;
+				background: rgba(0, 0, 0, 0);
+			}
+
+			li a.active {
+				background-color: #4CAF50;
+				color: white;
+			}
+
+			li a:hover:not(.active) {
+				background-color: white;
+				color: black;
+				
 			}
 		</style>
 	</head>
 
 	<body>
-		<audio src="music/清水準一%20-%20Bloom%20of%20Youth.mp3" controls autoplay></audio><br>
-		<p>清水準一 - Bloom of Youth<br>(Chrome不支持自动播放)</p>
+		<audio src="music/三亩地%20-%20城南花已开.mp3" controls autoplay></audio><br>
+		<p>三亩地 - 城南花已开<br>(Chrome不支持自动播放)</p>
 
 
 		<div class="big">
 			<div class="head">
 				<h1>言之无物</h1>
-				<h2>weilianboos的个人小站</h2>
+				<p>[weilianboos的个人小站]</p>
 
 
 
@@ -110,23 +124,19 @@
 			<div class="two">
 				<p>Der Tod ist der zeitlose Frieden und das leben ist der Krieg<br>
 					死亡是永恒的宁静而生就意味着战斗</p>
-					
+
 			</div>
 			<div class="three">
-				
-				<a href="one">其一</a>
-				<br>
-				<a href="two">其二</a>
-				<br>
-				<a href="three">其三</a>
-				<br>
-				<a href="four">其四</a>
-				<br>
-				<a href="five">其五</a>
-				<br>
+				<ul>
+					<li><a href="one">其一</a></li>
+					<li><a href="two">其二</a></li>
+					<li><a href="three">其三</a></li>
+					<li><a href="four">其四</a></li>
+					<li><a href="five">其五</a></li>
+				</ul>
 			</div>
 
-		</div>
+
 		</div>
 
 
