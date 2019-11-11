@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.flex-container {
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-flow: row wrap;
+				-webkit-justify-content: space-around;
+				justify-content: space-around;
+				flex-flow: row wrap;
+				font-weight: bold;
+				text-align: center;
+			}
+
+			.flex-container>* {
+				padding: 0;
+				flex: 0 100%;
+			}
+
+			.main {
+				text-align: left;
+				background: black;
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+
+			p {
+				color: white;
+			}
+
+			.header {
+				line-height: 45px;
+				background: dimgrey;
+				height: 50px;
+			}
+
+			.footer {
+				background: dimgrey;
+			}
+
+			.aside {margin: 10px;
+				background: dimgrey;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+
+			@media all and (min-width: 600px) {
+				.aside {
+					flex: 0 0 auto;
+					width: 30%;
+				}
+
+				.header {
+					order: 0;
+				}
+
+				.aside1 {
+					order: 1;
+				}
+
+				.aside2 {
+					order: 2;
+				}
+
+				.aside3 {
+					order: 3;
+				}
+
+				.aside4 {
+					order: 4;
+				}
+
+				.aside5 {
+					order: 5;
+				}
+
+				.aside6 {
+					order: 6;
+				}
+
+				.footer {
+					order: 7;
+				}
+			}
+
+			@media all and (min-width: 800px) {
+				.aside {
+					flex: 0 0 auto;
+					width: 13%;
+				}
+
+				.header {
+					order: 0;
+				}
+
+				.aside1 {
+					order: 1;
+				}
+
+				.aside2 {
+					order: 1;
+				}
+
+				.aside3 {
+					order: 1;
+				}
+
+				.aside4 {
+					order: 1;
+				}
+
+				.aside5 {
+					order: 1;
+				}
+
+				.aside6 {
+					order: 1;
+				}
+
+				.footer {
+					order: 3;
+				}
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="flex-container">
+			<div class="header">
+				<p>数码兽数据库</p>
+			</div>
+			<div class="aside aside1"><img src="img/agumon.jpg">
+				<p>亚古兽</p>
+			</div>
+			<div class="aside aside2"><img src="img/gabumon.jpg">
+				<p>加布兽</p>
+			</div>
+			<div class="aside aside3"><img src="img/piyomon.jpg">
+				<p>比丘兽</p>
+			</div>
+			<div class="aside aside4"><img src="img/palmon.jpg">
+				<p>巴鲁兽</p>
+			</div>
+			<div class="aside aside5"><img src="img/tentomon.jpg">
+				<p>甲虫兽</p>
+			</div>
+			<div class="aside aside6"><img src="img/gomamon.jpg">
+				<p>哥玛兽</p>
+			</div>
+			<div class="footer">
+				<p>技术支持<br>玄内</p>
+			</div>
+		</div>
+
+	</body>
+</html>
