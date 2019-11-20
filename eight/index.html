@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" charset="utf-8">
+			function add() {
+				var x = document.getElementById('2').insertRow(0);
+				var y = x.insertCell(0);
+				var z = x.insertCell(1);
+				var a = x.insertCell(2);
+				y.innerHTML = "序号";
+				z.innerHTML = "内容";
+				a.innerHTML = "<p onclick='remove(this)'>点此删除</p>";
+			}
+
+			function remove(r) {
+				var i = r.parentNode.parentNode.rowIndex;
+				document.getElementById('2').deleteRow(i);
+			}
+		</script>
+
+		<style>
+			body{background-color: #000000;}
+			table{color: #D20001;
+			border-color: #D20001;
+			border-collapse: collapse;}
+			button{color: #D20001;
+			background-color: #000000;
+			border: 1px solid #D20001;}
+			
+			div{
+			width: 240px;
+			margin: 0 auto;}
+			td{width: 80px;}
+			
+		</style>
+	</head>
+	<body>
+		<div class="1">
+			<table id="2" border="1">
+				<tr>
+					<td>序号</td>
+					<td>内容</td>
+					<td>
+						<p onclick='remove(this)'>点此删除</p>
+					</td>
+				</tr>
+
+			</table>
+			<button type="button" onclick="add()">点此新建</button>
+		</div>
+
+	</body>
+</html>
