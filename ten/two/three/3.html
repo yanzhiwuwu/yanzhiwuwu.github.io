@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>插画廊</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<style>
+			/* Make the image fully responsive */
+
+			.carousel-inner img {
+				margin: auto;
+				height: 700px;
+			}
+
+			.carousel-inner {
+				padding: 0 0 0 300px;
+			}
+
+			ul.1 {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+			}
+
+			li.2 {
+				float: left;
+			}
+
+			li a.3 {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+				background-color: #111;
+			}
+
+			.active {
+				background-color:
+			}
+
+			.4 {
+				position: absolute;
+				z-index: 10
+			}
+		</style>
+	</head>
+	<body>
+		<div class="4">
+			<ul style="list-style-type: none;
+			      margin: 0;
+			      padding: 0;
+			      overflow: hidden;
+			      background-color: #333;
+			      position: fixed;
+			      bottom: 0;
+			      width: 100%;">
+				<li style="float: left;"><a style="display: block;
+			      color: white;
+			      text-align: center;
+			      padding: 14px 16px;
+			      text-decoration: none;"
+					 href="#home">画师主页</a></li>
+				<li style="float: left;"><a style="display: block;
+			      color: white;
+			      text-align: center;
+			      padding: 14px 16px;
+			      text-decoration: none;"
+					 href="#home">赞赏</a></li>
+				<li style="float: left;"><a style="display: block;
+				       color: white;
+				       text-align: center;
+				       padding: 14px 16px;
+				       text-decoration: none;"
+					 href="#home">评论</a></li>
+					 <li style="float: left;"><a style="display: block;
+					 	       color: white;
+					 	       text-align: center;
+					 	       padding: 14px 16px;
+					 	       text-decoration: none;"
+					 	 href="#home">收藏</a></li>
+				<li style="float: left;"><a style="display: block;
+					       color: white;
+					       text-align: center;
+					       padding: 14px 16px;
+					       text-decoration: none;"
+					 href="#home">约稿</a></li>
+			</ul>
+		</div>
+
+
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+
+			<!-- 指示符 -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+
+			<!-- 轮播图片 -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="../img/illust_57534432_20191201_131456.jpg">
+					<div class="carousel-caption">
+						<h3>东方</h3>
+						<p>画师名</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="../img/illust_68837472_20190524_173148.jpg">
+					<div class="carousel-caption">
+						<h3>POPOPIPI</h3>
+						<p>画师名</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="../img/illust_70785500_20190718_115332.png">
+					<div class="carousel-caption">
+						<h3>利兹与青鸟</h3>
+						<p>画师名</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- 左右切换按钮 -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+
+		</div>
+
+	</body>
+</html>
